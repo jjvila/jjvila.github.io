@@ -1,0 +1,84 @@
+#mainContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #ffffff;
+	background-color: #000000;
+	padding: 10px;
+	text-align: center;
+}
+.menuBar {
+	color: #ffffff;
+	text-align: center;
+	
+}
+
+h1 {
+	color: #383838;
+	
+}
+
+h2 {
+	color: #e6e6e6;
+}
+
+.buttonStyle {
+	border-radius: ;
+	border: thin solid #000000;
+	padding: 5px;
+	background-color: #1a1a1a;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: ;
+	color: #ffffff;
+	text-align: center;
+	width: ;
+}
+
+.buttonStyle:hover {
+	border: thin solid gray;
+	background-color: ;
+	color: #ffffff;
+	cursor: pointer;
+}
+.buttonStyle:active {
+	border: thin solid #1a1a1a;
+	background-color: #2e2e2e;
+	color: #ffffff;
+	cursor: pointer;
+}
+.buttonStyleCurrent {
+	border-radius: ;
+	border: thin solid #000000;
+	padding: 5px;
+	background-color: #2e2e2e;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: ;
+	color: #ffffff;
+	text-align: center;
+	width: ;
+}
+
+.thumbnailStyle {
+	border: thick solid #000000;
+	padding: 5px;
+	background-color: #2e2e2e;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: ;
+	
+	text-align: center;
+	width: ;
+}
+
+.captionStyle {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: ;
+	color: #ececec;
+	text-align: center;
+}
+
+.captionStyle:hover {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: ;
+	color: #ffffff;
+	text-align: center;
+	cursor: pointer;
+}
