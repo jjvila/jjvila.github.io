@@ -1,0 +1,258 @@
+/*
+	breakpoint: 768px
+*/
+
+body {
+	background-color: #fbfbff;
+}
+
+h1 {
+	margin-top: 50px;
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-size: 1.8em;
+	color: white;
+}
+
+h2 {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: large;
+	font-weight:bold;
+	color: white;
+	white-space: nowrap;
+}
+
+p {
+	color: white;
+	font-size: 1em;
+	font-family: sans-serif;
+	word-spacing: 0.2em;
+	letter-spacing: 0.05em;
+}
+
+hr {
+    height: auto;
+    background-color: white;
+		margin-top: 0px;
+}
+
+.anchor {
+	display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+
+}
+
+.line-decor {
+	position: relative;
+	height: 1px;
+	width: 100%;
+	background: #fbfbff;
+}
+
+/***** Top menu *****/
+
+.mobile-menu {
+	position:fixed;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	background: black;
+	line-height: 32px;
+	
+}
+
+.mobile-menu a {
+	display: inline-block;
+	margin-bottom: 15px;
+	color: #fff;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mobile-menu a:hover {color: #92d3ff; text-decoration: none;}
+.mobile-menu a:focus { color: #fff; }
+
+.mobile-column {
+	position:relative;
+    float: left;
+    width: 50%;
+    padding: 2px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+.mobile-logo {
+
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	background: url(images/logo.png) left center no-repeat;
+	text-indent: -9999px;
+}
+
+.menu-icon {
+	border: none;
+  outline: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin:  0 0 0;
+  -webkit-appearance: none;
+  background: #000000;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+
+.hidden-menu a {
+	color:white;	
+	
+}
+
+.hidden-menu p {
+	color:white;
+	display:inline;
+	padding:3px;
+	
+}
+
+
+
+/* **** */
+
+/* Main Page Banner */
+.slogan-container {
+	width: 100%;
+	text-align: center;
+	margin-top: 65px;
+}
+.design-txt {
+	display:inline;
+	font-family: "Century", Georgia , Times New Roman;
+	font-size: 3vw;
+	color: #000;
+}
+.code-txt {
+	display:inline;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 3.8vw;
+	color: #000;
+}
+
+.img-container {	
+	width: 100%;
+	overflow: hidden;
+}
+
+.img-banner {
+	max-width: 100%;
+	max-height: 80vh;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-banner-mobile {
+	display:none;
+}
+/* **** Main Page Lower Content **** */
+
+.lower-content {
+	position:static;
+  display: block;
+	z-index: 500;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(black, #19232b);
+	padding-bottom: 50px;
+}
+.outline-button {
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;
+	margin:3px;
+	text-align: center;
+	padding: 2px;
+	color: white;
+	white-space: nowrap;
+	background-color: #142c30;
+}
+.outline-button:hover {background-color: #347782; text-decoration: none;}
+
+.footer {
+	position:static;
+  display: block;
+	z-index: 500;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+/* mobile configuration */
+.mobile {
+	display: none;
+}
+.mobile h1 {
+	text-align: center;
+}
+.mobile h2 {
+	text-align: center;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 1000px) {
+	.design-txt {
+		font-size: 30px;
+	}
+	.code-txt {
+		font-size: 35px;
+	}
+}
+
+@media screen and (max-width: 767.5px) {
+	.design-txt {
+		font-size: 20px;
+	}
+	.code-txt {
+		font-size: 25px;
+	}
+	.img-banner-mobile {
+	position: relative;
+	left: 50%;
+	transform: translateX(-40%);
+	max-width: none;
+	max-height: 90vh;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	}
+	.img-banner {
+		display:none;
+	}
+	
+	.lower-content-img {
+		display: block;
+		float: right;
+		width: 30%;
+		margin-left: 15px;
+	}
+	p {
+	color: white;
+	font-size: 1em;
+	font-family: sans-serif;
+	word-spacing: 0.1em;
+	letter-spacing: 0.03em;
+}
+.outline-button {
+	margin: 15px;
+}
+.desktop {
+	display: none;
+}
+.mobile {
+	display: block;
+}
+}

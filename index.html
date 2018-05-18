@@ -5,64 +5,230 @@
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script src="js/hover.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+    <!-- JQUERY SMOOTH SCROLL -->
+  <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </head>
-
 <body>
-<!-- banner -->
-<div class="container-fluid">
-<div class="row">
-<img src="images/banner.png" class="img-responsive">
-</div>
-</div>
+<a class="anchor" id="home"></a>
 
-<!-- menu -->
-<div class="container-fluid">
-  <div class="row">
-  	<a href="index.html">
-	  	<div class="col-sm-3 buttonStyleCurrent">Home</div></a>
-	  <a href="photography.html">
-    	<div class="col-sm-3 buttonStyle">Photography</div></a>
-    <a href="graphicdesign.html">
-    	<div class="col-sm-3 buttonStyle">Graphic Design</div></a>
-    <a href="contact.html">
-    	<div class="col-sm-3 buttonStyle">Contact</div></a>
-  </div>
-</div>
-
-
-
-<div id="mainContent">
-<h2> Latest </h2>
-
-<div class="row">
-  <div class="col-sm-12">
-    <div class="thumbnailStyle">
-      <a href="images/small/bitmap.png" class="captionStyle">
-        <img src="images/small/bitmap.png" alt="flower" style="width:100%">
-          <p>Discus Project</p>
-      </a>
+<!-- Menu Bar -->
+<div class="mobile-menu">
+  <div class="container">
+    <div class="row">
+      <div class="mobile-column" style="padding-left:30px;">
+        <img src="images/0001.png" style="height: 50px;">
+      </div>
+      <div class="mobile-column" align="right">
+      <button type="button" data-toggle="collapse" data-target="#id001" class="menu-icon"><img src="images/0003.png" width="35px"></button>
+      </div>
+    </div>
+  
+    <div class="row" style="padding:0em 1em 0em 1em">
+      <div id="id001" class="collapse hidden-menu" style="text-align: center">
+        <a href="#home">Home</a>
+        <p>·</p>
+        <a href="#home">Coding</a>
+        <p>·</p>
+      	<a href="#features">Graphics</a>
+        <p>·</p>
+      	<a href="#profiles">Photos</a>
+        <p>·</p>
+      	<a href="#contact">About</a>
+      </div> 
     </div>
   </div>
+    <div class="line-decor" style="bottom: 2px;"> </div>
 </div>
 
+<!-- Banner -->
+<div class="slogan-container">
+  <p class="design-txt">DESIGNER.</a>
+  <p class="code-txt">CODER.</a>
+</div>
+<div class="img-container">
+  <img class="img-fluid img-banner" src="images/0002.png">
+  <img class="img-fluid img-banner-mobile " src="images/0002-2.png">
+</div>
+  
+
+<!-- Lower Content -->
+<div class="lower-content">
+  <div class="line-decor" style="top: 3px;"></div>
+  
+  <!-- Desktop Version -->
+    <div class="container desktop">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Greetings. I'm Joan Avila.</h1><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="lower-content-img" src="images/0005.png"  width="100%">
+          <h2>About Me</h2>
+          <hr>
+          <p>I am a graphic designer, photographer, and computer programmer with a focus on developing UI and other front-end systems. 
+             <br><br> Complimenting my professional work is a B.S. in computer science from the University of Nevada, Las Vegas.
+             
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <img class="lower-content-img" src="images/0008.png" width="100%">
+          <h2>UI & Programming</h2>
+          <hr>
+          <p>Designing a great user interface involves hours of  planning and work, but the process is energizing and suspensful.
+            <br><br> The best part of the process is that the UI/UX field is always evolving with new ideas and technolgies. 
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <img class="lower-content-img" src="images/0004.png" width="100%">
+          <h2>Graphic Design</h2>
+          <hr>
+          <p>
+            Graphic design is an indispensable talent for which I am grateful to have. I have designed flyers, maps, blueprints, and even UI mockups.
+            <br><br>The human heart depicted above became a featured picture at Wikipedia, where I first learned about vector art.
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <img class="lower-content-img" src="images/0009.jpg" width="100%">
+          <h2>Photography</h2>
+          <hr>
+          <p>
+            Photography is the hobby I escape to when the sunset is beautiful, or the plant in my yard blooms its first flower.
+            <br><br>My focus is nature, but over the years I have done family portraits, architecture, night, and stock photography. 
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="outline-button">
+            Learn More
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="outline-button">
+            View Projects
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="outline-button">
+            Visit Gallery
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="outline-button">
+            Visit Gallery
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Version -->
+    <div class="container mobile">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Greetings. I'm Joan Avila.</h1><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <img class="lower-content-img" src="images/0005.png"  width="100%">
+          <p>I am a graphic designer, photographer, and computer programmer with a focus on developing UI and other front-end systems. 
+             <br><br> Complimenting my professional work is a B.S. in computer science from the University of Nevada, Las Vegas.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-12">
+          <div class="outline-button">
+            Learn More
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>UI & Programming</h2>
+          <hr>
+          <img class="lower-content-img" src="images/0008.png" width="100%">
+          <p>Designing a great user interface involves hours of  planning and work, but the process is energizing and suspensful.
+            <br><br> The best part of the process is that the UI/UX field is always evolving with new ideas and technolgies. 
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="outline-button">
+          View Projects
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Graphic Design</h2>
+          <hr>
+          <img class="lower-content-img" src="images/0004.png" width="100%">
+          <p>
+            Graphic design is an indispensable talent for which I am grateful to have. I have designed flyers, maps, blueprints, and even UI mockups.
+            <br><br>The human heart depicted to the right became a featured picture at Wikipedia, where I first learned about vector art.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="outline-button">
+          Visit Gallery
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Photography</h2>
+          <hr>
+          <img class="lower-content-img" src="images/0009.jpg" width="100%">
+          <p>
+            Photography is the hobby I escape to when the sunset is beautiful, or the plant in my yard blooms its first flower.
+            <br><br>My focus is nature, but over the years I have done family portraits, architecture, night, and stock photography. 
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="outline-button">
+          Visit Gallery
+        </div>
+      </div>
+    </div>
+      
+  </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- footer -->
+<div class="footer">
+  <div class="line-decor" style="top: 3px;"> </div>
+  <p style="padding: 13px;">  Copyright 2018 japortfolio.net. Some rights reserved. See licensing for more information. </p>
+</div>
 
 </body>
-</html>
