@@ -124,6 +124,17 @@ hr {
 /* **** */
 
 /* Main Page Banner */
+.banner-container {
+	position: relative;
+  text-align: center;
+  color: white;
+}
+.top-centered {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
 .slogan-container {
 	width: 100%;
 	text-align: center;
@@ -142,6 +153,12 @@ hr {
 	color: #000;
 }
 
+.photo-txt {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 3vw;
+	color: white;
+}
+
 .img-container {	
 	width: 100%;
 	overflow: hidden;
@@ -150,6 +167,13 @@ hr {
 .img-banner {
 	max-width: 100%;
 	max-height: 80vh;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-banner-2 {
+	max-width: 100%;
+	max-height: 100vh;
 	display: block;
   margin-left: auto;
   margin-right: auto;
@@ -165,10 +189,12 @@ hr {
 	z-index: 500;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(black, #19232b);
+	background: linear-gradient(black, black);
 	padding-bottom: 50px;
 }
 .outline-button {
+	display: inline-block;
+	width: 100%;
 	border-style: solid;
 	border-color: white;
 	border-width: 2px;
@@ -177,9 +203,9 @@ hr {
 	padding: 2px;
 	color: white;
 	white-space: nowrap;
-	background-color: #142c30;
+	background-color: #00121c;
 }
-.outline-button:hover {background-color: #347782; text-decoration: none;}
+.outline-button:hover {background-color: #347782; text-decoration: none; color: white;}
 
 .footer {
 	position:static;
@@ -199,6 +225,26 @@ hr {
 }
 .mobile h2 {
 	text-align: center;
+}
+
+/* Gallery */
+.gallery-container {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #ffffff;
+	background-color: #000000;
+	padding: 10px;
+	text-align: center;
+}
+.thumbnailStyle {
+	border: thick solid #000000;
+	padding: 5px;
+	background-color: #2e2e2e;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: ;
+	
+	text-align: center;
+	width: ;
 }
 
 
