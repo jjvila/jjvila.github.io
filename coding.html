@@ -16,47 +16,37 @@
 
 <!-- Menu Bar -->
 <div class="menu-bar">
-  <div class="container">
-    <div class="row">
-      <div class="menu-column" style="padding-left:30px;">
-        <a href="index.html" style="display: inline;">
-        <img src="images/0001.png" style="height: 50px;"></a>
-        
-      </div>
-      <div class="menu-column" align="right">
-      <button type="button" data-toggle="collapse" data-target="#id001" class="menu-icon"><img src="images/0003.png" width="35px"></button>
-      </div>
-    </div>
-  
-    <div class="row" style="padding:0em 1em 0em 1em">
-      <div id="id001" class="collapse hidden-menu" style="text-align: center">
-        <a href="index.html">Home</a>
-        <p>·</p>
-        <a href="coding.html">Coding</a>
-        <p>·</p>
-      	<a href="graphics.html">Graphics</a>
-        <p>·</p>
-      	<a href="photography.html">Photos</a>
-        <p>·</p>
-      	<a href="about.html">About</a>
-      </div> 
-    </div>
+  <div class="menu-column-1">
+    <a href="index.html">
+      <img src="images/0001.png" style="height: 50px">
+    </a>
   </div>
-    <div class="line-decor" style="bottom: 2px;"> </div>
+  <div class="menu-column-2" align="right">
+    <button type="button" data-toggle="collapse" data-target="#id001" class="menu-icon">
+      <img id="hoverMe" src="images/0003.png" style="height: 45px;" onmouseover="onHover();" onmouseout="offHover();">
+    </button>
+  </div>
+  <br style="clear:both;"/>
+  <div id="id001" class="collapse hidden-menu">
+    <a href="index.html">Home</a>
+    <p>·</p>
+    <p class="menu-clicked">Coding</p>
+    <p>·</p>
+  	<a href="graphics.html">Graphics</a>
+    <p>·</p>
+    <a href="photography.html">Photos</a>
+    <p>·</p>
+    <a href="about.html">About</a>
+  </div> 
+  <div class="line-decor-bottom"> </div>
 </div>
 
 <!-- Banner -->
-<div class="banner-container">
-  
-<div class="slogan-container top-centered">
-  <p class="photo-txt"><b>JA</b>PROGRAMMING</p>
-</div>
-<div class="img-container">
-  <img class="img-fluid img-banner-2" src="images/codebanner.png">
-</div>
 
+<div class="banner-container">
+  <p class="bottom-centered subpage-title"><b>JA</b>PROGRAMMING</p>
+  <img class="img-banner-2" src="images/codebanner.png">
 </div>
-  
 
 <!-- Lower Content -->
 <div class="lower-content">

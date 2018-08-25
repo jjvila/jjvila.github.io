@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	resizeOnImport="true"
+	galleryTitle="Contributions"
+	indexPageName="index.html"
+
+>
+  <image imageURL="images/0001.jpg"
+	thumbURL="thumbs/0001.jpg"
+	linkURL="images/0001.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Joan\JAP\jjvila.github.io\gallery-gd\0001.png">
+    <title><![CDATA[0001]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/0002.jpg"
+	thumbURL="thumbs/0002.jpg"
+	linkURL="images/0002.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Joan\JAP\jjvila.github.io\gallery-gd\0002.png">
+    <title><![CDATA[0002]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/0003.jpg"
+	thumbURL="thumbs/0003.jpg"
+	linkURL="images/0003.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Joan\JAP\jjvila.github.io\gallery-gd\0003.png">
+    <title><![CDATA[0003]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

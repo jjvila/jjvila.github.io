@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="galleria/galleria-1.5.7.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>#galleria{height:520px}
+  
+  <!-- Manual responsive fix for now -->
+  @media screen and (max-width:900px){
+	#galleria{height:450px}
+}
+  @media screen and (max-width:800px){
+	#galleria{height:400px}
+}
+  @media screen and (max-width:700px){
+	#galleria{height:350px}
+}
+  @media screen and (max-width:600px){
+	#galleria{height:300px}
+}
+  @media screen and (max-width:500px){
+	#galleria{height:250px}
+}
+</style>
+</head>
+<body style="background: black;">
+<a class="anchor" id="home"></a>
+
+<!-- Menu Bar -->
+<div class="menu-bar">
+  <div class="menu-column-1">
+    <a href="index.html">
+      <img src="images/ret.png" style="height: 50px">
+    </a>
+  </div>
+  <div class="menu-column-2" align="right">
+    <button type="button" data-toggle="collapse" data-target="#id001" class="menu-icon">
+      <img id="hoverMe" src="images/0003.png" style="height: 45px;" onmouseover="onHover();" onmouseout="offHover();">
+    </button>
+  </div>
+  <br style="clear:both;"/>
+  <div id="id001" class="collapse hidden-menu">
+    <a href="index.html">Home</a>
+    <p>·</p>
+    <a href="coding.html">Coding</a>
+    <p>·</p>
+  	<a href="graphics.html">Graphics</a>
+    <p>·</p>
+    <a href="photography.html">Photos</a>
+    <p>·</p>
+    <a href="about.html">About</a>
+  </div> 
+  <div class="line-decor-bottom"> </div>
+</div>
+
+<!-- Banner -->
+  
+<!-- Lower Content -->
+<div class="lower-content" style="padding-top:50px">
+  <h1 class="margin-hd">Graphics: Art</h1>
+  
+  <!-- Desktop Version -->
+  
+        <div id="galleria">
+            <a href="gallery-gd/0010.png">
+                <img 
+                    src="gallery-gd/0010.png", 
+                    data-big="gallery-gd/0010.png"
+                    data-title="Discus Poster"
+                    data-description="Three-part poster of discus fish design."
+                >
+            </a>
+            <a href="gallery-gd/0011.png">
+                <img 
+                    src="gallery-gd/0011.png",
+                    data-big="gallery-gd/0011.png"
+                    data-title="Cichlids Poster"
+                    data-description="Cartoon poster of various cichlids."
+                >
+            </a>
+            <a href="gallery-gd/xxxx.png">
+                <img 
+                    src="gallery-gd/xxxx.png",
+                    data-big="gallery-gd/xxxx.png"
+                    data-title="Stay tuned"
+                    data-description="More media coming to this gallery soon."
+                >
+            </a>
+            <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Interior_convento_3.jpg/800px-Interior_convento_3.jpg">
+                <img 
+                    src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Interior_convento_3.jpg/120px-Interior_convento_3.jpg",
+                    data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Interior_convento_3.jpg/1400px-Interior_convento_3.jpg"
+                    data-title="Interior convento"
+                    data-description="Interior view of Yuriria Convent, founded in 1550."
+                >
+            </a>
+            <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Oxbow_Bend_outlook_in_the_Grand_Teton_National_Park.jpg/800px-Oxbow_Bend_outlook_in_the_Grand_Teton_National_Park.jpg">
+                <img 
+                    src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Oxbow_Bend_outlook_in_the_Grand_Teton_National_Park.jpg/100px-Oxbow_Bend_outlook_in_the_Grand_Teton_National_Park.jpg",
+                    data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Oxbow_Bend_outlook_in_the_Grand_Teton_National_Park.jpg/1280px-Oxbow_Bend_outlook_in_the_Grand_Teton_National_Park.jpg"
+                    data-title="Oxbow Bend outlook"
+                    data-description="View over the Snake River to the Mount Moran with the Skillet Glacier."
+                >
+            </a>
+            <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Hazy_blue_hour_in_Grand_Canyon.JPG/800px-Hazy_blue_hour_in_Grand_Canyon.JPG">
+                <img 
+                    src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Hazy_blue_hour_in_Grand_Canyon.JPG/100px-Hazy_blue_hour_in_Grand_Canyon.JPG",
+                    data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Hazy_blue_hour_in_Grand_Canyon.JPG/1280px-Hazy_blue_hour_in_Grand_Canyon.JPG"
+                    data-title="Hazy blue hour"
+                    data-description="Hazy blue hour in Grand Canyon. View from the South Rim."
+                >
+            </a>
+            <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2909_vallon_moy_res.jpg/800px-2909_vallon_moy_res.jpg">
+                <img 
+                    src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2909_vallon_moy_res.jpg/100px-2909_vallon_moy_res.jpg",
+                    data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2909_vallon_moy_res.jpg/1280px-2909_vallon_moy_res.jpg"
+                    data-title="Haute Severaisse valley"
+                    data-description="View of Haute Severaisse valley and surrounding summits from the slopes of Les Vernets."
+                >
+            </a>
+            <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bohinjsko_jezero_2.jpg/800px-Bohinjsko_jezero_2.jpg">
+                <img 
+                    src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bohinjsko_jezero_2.jpg/100px-Bohinjsko_jezero_2.jpg",
+                    data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bohinjsko_jezero_2.jpg/1280px-Bohinjsko_jezero_2.jpg"
+                    data-title="Bohinj lake"
+                    data-description="Bohinj lake (Triglav National Park, Slovenia) in the morning."
+                >
+            </a>
+            <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/800px-Bowling_Balls_Beach_2_edit.jpg">
+                <img 
+                    src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/100px-Bowling_Balls_Beach_2_edit.jpg",
+                    data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/1280px-Bowling_Balls_Beach_2_edit.jpg"
+                    data-title="Bowling Balls"
+                    data-description="Mendocino county, California, USA."
+                >
+            </a>
+            <a href="https://vimeo.com/25750735">
+                <span class="video">Works for vimeo too.</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=GOD-RyVB-3Q">
+                <span class="video">Works for youtube too.</span>
+            </a>
+
+        </div>
+    
+    </div>
+
+    <script>
+    $(function() {
+    
+        // Load the classic theme
+        Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+
+        // Initialize Galleria
+        Galleria.run('#galleria');
+    });
+    </script>
+
+
+  <!-- Mobile Version -->
+  
+</div>
+
+<!-- footer -->
+<div class="footer">
+  <div class="line-decor" style="top: 3px;"> </div>
+  <p style="padding: 13px;">  Copyright 2018 japortfolio.net. Some rights reserved. See licensing for more information. </p>
+</div>
+
+</body>

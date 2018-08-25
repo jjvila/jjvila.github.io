@@ -90,6 +90,15 @@ hr {
 	clear:both;
 }
 
+.line-decor-bottom {
+	bottom: 2px;
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	background: #fbfbff;
+	clear:both;
+}
+
 /***** Menu Bar *****/
 
 .menu-bar {
@@ -99,7 +108,6 @@ hr {
 	z-index: 999;
 	width: 100%;
 	background: black;
-	line-height: 32px;
 }
 
 .menu-bar a {
@@ -111,64 +119,54 @@ hr {
 
 .menu-bar a:hover {color: #92d3ff; text-decoration: none;}
 .menu-bar a:focus { color: #fff; }
+.menu-clicked {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	color: #ff9650;
+}
 
-.menu-column {
-	position:relative;
-    float: left;
-    width: 50%;
-    padding: 2px;
-    height: auto; /* Should be removed. Only for demonstration */
+.menu-column-1 {
+  float: left;
+  width: 70%;
+	padding-left:30px;
+	background-color: black;
+	height: 50px;
+}
+
+.menu-column-2 {
+  float: right;
+  width: 30%;
+	background-color: black;
+	height: 50px;
 }
 
 .menu-icon {
 	border: none;
   outline: none;
-  color: #fff;
-  padding: 0.5em 1em;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  margin:  0 0 0;
   -webkit-appearance: none;
-  background: #000000;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
+	background: black;
 }
 
-.hidden-menu a {
-	color:white;	
-	
+.hidden-menu {
+	text-align: center;
+	color:white;
 }
 
 .hidden-menu p {
-	color:white;
 	display:inline;
-	padding:3px;
-	
 }
-
 
 
 /* **** */
 
 /* Main Page Banner */
-.banner-container {
-	position: relative;
-  text-align: center;
-  color: white;
-}
-.top-centered {
+.bottom-centered {
     position: absolute;
     bottom: 0px;
     left: 50%;
     transform: translate(-50%, 0%);
 }
-.slogan-container {
-	width: 100%;
-	text-align: center;
-	margin-top: 65px;
-}
+
 .design-txt {
 	display:inline;
 	font-family: "Century", Georgia , Times New Roman;
@@ -200,18 +198,17 @@ hr {
   width: 100%;
 }
 
-.img-container {	
-	width: 100%;
-	overflow: hidden;
-}
-.img-container-relative {
+.banner-container {
 	position: relative;
+	padding-top: 44px;
+	text-align: center;
 	width: 100%;
 	overflow: hidden;
 }
+
 .img-container-absolute {
 	position: absolute;
-	top: 30px;
+	top: 84px;
   right: 50px;
 	width: 40%;
 	background-color: #fff;
@@ -239,6 +236,14 @@ hr {
 .img-banner-mobile {
 	display:none;
 }
+
+.subpage-title {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 2em;
+	color: white;
+}
+
+
 /* **** Main Page Lower Content **** */
 
 .lower-content {
@@ -324,6 +329,117 @@ hr {
 	padding: 10px;
 }
 
+
+/* Grid Menu */
+
+.image {
+  position: relative;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  overflow: hidden;
+  width: 100%;
+}
+
+.pattern {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	padding:2px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fadecontainer:hover .image {
+  opacity: 0.1;
+}
+
+.fadecontainer:hover .middle {
+  opacity: 1;
+}
+
+.grid-title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 2px;
+	padding: 0.8rem;
+	background: #0c4a7c;
+	opacity: .8;
+	font-family: "Garamond", Georgia, serif;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: white;
+}
+
+.text {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* **** */
+
+.grid-row {
+	min-height: 100px;
+	overflow: hidden;
+}
+.grid-col {
+	position:relative;
+    float: left;
+    width: 33.33%;
+    padding: 2px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.grid-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .grid-col {
+    	position:relative;
+    	top:0;
+    	left:0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+			.margin-md {
+			margin: 1px;
+		}
+}
+
+@media screen and (min-width: 1000px) {
+    .grid-row {
+    	position:relative;
+    	top:0;
+    	left:0;
+      width: 70%;
+			margin: 0 auto;
+    }
+}
+
+
+
+
 .desktop {
 	display: block;
 }
@@ -341,7 +457,7 @@ hr {
 @media screen and (max-width:950px){
 	.img-container-absolute {
 	position: absolute;
-	top: 30px;
+	top: 84px;
   right: 50px;
 	width: 60%;
 	background-color: #fff;
