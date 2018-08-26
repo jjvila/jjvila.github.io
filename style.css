@@ -155,9 +155,40 @@ hr {
 .hidden-menu p {
 	display:inline;
 }
-
-
 /* **** */
+
+/* Gallery navigation tree */
+.gallery-nav {
+	height: 25px;
+	margin-top: 0em;
+	padding-left: 1em;
+	word-spacing: 0.2em;
+	width: 100%;
+	background: #dde8ef;
+}
+.gallery-nav-link {
+	vertical-align: middle;
+	display: inline;
+	color: black;
+	font-weight: 600;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.gallery-nav-link:hover {color: #92d3ff; text-decoration: none;}
+.gallery-nav-link:focus { color: #fff; }
+.gallery-nav-arrow {
+	vertical-align: middle;
+	display: inline;
+	font-size: .7em;
+	color: black;
+}
+.gallery-nav-current {
+	color: black;
+	font-style: italic;
+	font-weight: 600;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	vertical-align: middle;
+	display: inline;
+}
 
 /* Main Page Banner */
 .bottom-centered {
