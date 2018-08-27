@@ -456,10 +456,10 @@ hr {
 }
 .grid-col {
 	position:relative;
-    float: left;
-    width: 33.33%;
-    padding: 2px;
-    height: auto; /* Should be removed. Only for demonstration */
+  float: left;
+  width: 33.33%;
+  padding: 2px;
+  height: auto; /* Should be removed. Only for demonstration */
 }
 /* Clear floats after the columns */
 .grid-row:after {
@@ -469,20 +469,20 @@ hr {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
     .grid-col {
     	position:relative;
     	top:0;
     	left:0;
-        width: 100%;
+      width: 100%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .grid-title {
+    	font-size: 0.7em;
     }
 }
 
-@media screen and (max-width: 500px) {
-			.margin-md {
-			margin: 1px;
-		}
-}
 
 @media screen and (min-width: 1000px) {
     .grid-row {
