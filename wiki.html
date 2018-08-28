@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="galleria/galleria-1.5.7.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>#galleria{height:520px}
+  
+  <!-- Manual responsive fix for now -->
+  @media screen and (max-width:900px){
+	#galleria{height:450px}
+}
+  @media screen and (max-width:800px){
+	#galleria{height:400px}
+}
+  @media screen and (max-width:700px){
+	#galleria{height:350px}
+}
+  @media screen and (max-width:600px){
+	#galleria{height:300px}
+}
+  @media screen and (max-width:500px){
+	#galleria{height:250px}
+}
+</style>
+</head>
+<body style="background: black;">
+
+<!-- Menu Bar -->
+<div class="menu-bar">
+  <div class="menu-column-1">
+    <a href="index.html">
+      <img src="images/0001.png" style="height: 50px">
+    </a>
+  </div>
+  <div class="menu-column-2" align="right">
+    <button type="button" data-toggle="collapse" data-target="#id001" class="menu-icon">
+      <img id="hoverMe" src="images/0003.png" style="height: 45px;" onmouseover="onHover();" onmouseout="offHover();">
+    </button>
+  </div>
+  <br style="clear:both;"/>
+  <div id="id001" class="collapse hidden-menu">
+    <a href="index.html">Home</a>
+    <p>·</p>
+    <a href="coding.html">Coding</a>
+    <p>·</p>
+  	<a href="graphics.html">Graphics</a>
+    <p>·</p>
+    <a href="photography.html">Photos</a>
+    <p>·</p>
+    <a href="about.html">About</a>
+  </div> 
+  <div class="line-decor-bottom"> </div>
+</div>
+
+<!-- Banner -->
+  
+<!-- Lower Content -->
+<div class="lower-content" style="background: white; padding-top:50px; padding-bottom:0px;">
+  <div class="gallery-nav">
+    <a class="gallery-nav-link" href="index.html">Home</a>
+    <p class="gallery-nav-arrow">></p>
+    <a class="gallery-nav-link" href="gallery.html">Graphics</a>
+    <p class="gallery-nav-arrow">></p>
+    <p class="gallery-nav-current">Wikimedia Contributions</p>
+  </div>
+  <!-- Desktop Version -->
+  <p class="margin-md txt-black">I contributed to Wikipedia and Wikimedia Commons from 2008 to 2012. There, I learned to create scalable vector art and published educational media for use at the various Wiki projects. Below are select graphics from my gallery at Wikimedia Commons. For a full gallery of my contributions, visit my <a href="https://commons.wikimedia.org/wiki/Category:SVGs_by_ZooFari">Commons category</a>.</p>
+        <div id="galleria">
+            <a href="gallery-gd/0004.png">
+                <img 
+                    src="gallery-gd/0004.png", 
+                    data-big="gallery-gd/0004.png"
+                    data-title="Human Heart Anatomy"
+                    data-description="Heart anatomy, a featured picture at Wikipedia."
+                >
+            </a>
+            <a href="gallery-gd/0001.png">
+                <img 
+                    src="gallery-gd/0001.png", 
+                    data-big="gallery-gd/0001.png"
+                    data-title=""
+                    data-description="Coat of Arms of the Džasim family from Bosnia."
+                >
+            </a>
+            <a href="gallery-gd/0002.png">
+                <img 
+                    src="gallery-gd/0002.png", 
+                    data-big="gallery-gd/0002.png"
+                    data-title=""
+                    data-description="Coat of arms of the Walsh family from Ireland."
+                >
+            </a>
+            <a href="gallery-gd/0003.png">
+                <img 
+                    src="gallery-gd/0003.png", 
+                    data-big="gallery-gd/0003.png"
+                    data-title=""
+                    data-description="Coat of arms of the Lee family."
+                >
+            </a>
+            <a href="gallery-gd/0005.png">
+                <img 
+                    src="gallery-gd/0005.png",
+                    data-big="gallery-gd/0005.png"
+                    data-title=""
+                    data-description="160th Signal Brigade Distinctive Unit Insignia."
+                >
+            </a>
+            <a href="gallery-gd/0006.png">
+                <img 
+                    src="gallery-gd/0006.png",
+                    data-big="gallery-gd/0006.png"
+                    data-title=""
+                    data-description="Floor plan of White House State Floor."
+                >
+            </a>
+            <a href="gallery-gd/0007.png">
+                <img 
+                    src="gallery-gd/0007.png",
+                    data-big="gallery-gd/0007.png"
+                    data-title=""
+                    data-description="Normanskill Watershed in New York, US."
+                >
+            </a>
+            <a href="gallery-gd/0008.png">
+                <img 
+                    src="gallery-gd/0008.png",
+                    data-big="gallery-gd/0008.png"
+                    data-title=""
+                    data-description="Tramnet van Baltimore in 1945."
+                >
+            </a>
+            <a href="gallery-gd/0009.png">
+                <img 
+                    src="gallery-gd/0009.png",
+                    data-big="gallery-gd/0009.png"
+                    data-title=""
+                    data-description="Seal of the Town of Colonie, Colonie, New York."
+                >
+            </a>
+            
+
+        </div>
+    
+    </div>
+
+    <script>
+    $(function() {
+    
+        // Load the classic theme
+        Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+
+        // Initialize Galleria
+        Galleria.run('#galleria');
+    });
+    </script>
+
+
+  <!-- Mobile Version -->
+  
+</div>
+
+<!-- footer -->
+<div id="footer">
+  <div class="line-decor" style="top: 3px;"> </div>
+  <p style="padding: 13px;">  Copyright 2018 japortfolio.net. Some rights reserved. See licensing for more information. </p>
+</div>
+
+</body>
