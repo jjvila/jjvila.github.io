@@ -57,13 +57,14 @@
 }
 .galleria-theme-classic .galleria-counter {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 10px;
     text-align: right;
     color: black;
     font: normal 11px/1 arial,sans-serif;
-    z-index: 1;
-}
+    z-index: -999;
+} /* index changed from 1 to hide */
+
 .galleria-theme-classic .galleria-loader {
     background: #000;
     width: 20px;
@@ -152,7 +153,9 @@
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: ; }
-.galleria-info { display: none !important; } // hide the old caption
+    
+/* hide old caption */
+.galleria-info { display: none !important; }
     
 
 /* *** */
