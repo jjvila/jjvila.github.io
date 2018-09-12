@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="galleria/galleria-1.5.7.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>#galleria{height:520px}
+  
+  <!-- Manual responsive fix for now -->
+  @media screen and (max-width:900px){
+	#galleria{height:450px}
+}
+  @media screen and (max-width:800px){
+	#galleria{height:400px}
+}
+  @media screen and (max-width:700px){
+	#galleria{height:350px}
+}
+  @media screen and (max-width:600px){
+	#galleria{height:300px}
+}
+  @media screen and (max-width:500px){
+	#galleria{height:250px}
+}
+</style>
+</head>
+<body style="background: black;">
+
+<!-- Menu Bar -->
+<div class="menu-bar">
+  <div class="menu-column-1">
+    <a href="index.html">
+      <img src="images/0001.png" style="height: 50px">
+    </a>
+  </div>
+  <div class="menu-column-2" align="right">
+    <button type="button" data-toggle="collapse" data-target="#id001" class="menu-icon">
+      <img id="hoverMe" src="images/0003.png" style="height: 45px;" onmouseover="onHover();" onmouseout="offHover();">
+    </button>
+  </div>
+  <br style="clear:both;"/>
+  <div id="id001" class="collapse hidden-menu">
+    <a href="index.html">Home</a>
+    <p>·</p>
+    <a href="coding.html">Coding</a>
+    <p>·</p>
+  	<a href="graphics.html">Graphics</a>
+    <p>·</p>
+    <a href="photography.html">Photos</a>
+    <p>·</p>
+    <a href="about.html">About</a>
+  </div> 
+  <div class="line-decor-bottom"> </div>
+</div>
+
+<!-- Banner -->
+  
+<!-- Lower Content -->
+<div class="lower-content" style="background: white; padding-top:50px; padding-bottom:0px;">
+  <div class="gallery-nav">
+    <a class="gallery-nav-link" href="index.html">Home</a>
+    <p class="gallery-nav-arrow">></p>
+    <a class="gallery-nav-link" href="graphics.html">Graphics</a>
+    <p class="gallery-nav-arrow">></p>
+    <p class="gallery-nav-current">Logos & Marks</p>
+  </div>
+  <!-- Desktop Version -->
+        <div id="galleria">
+            <a href="gallery-gd/0012.png">
+                <img 
+                    src="gallery-gd/0012.png", 
+                    data-big="gallery-gd/0012.png"
+                    data-title=""
+                    data-description="Ernesto's Fishland, 2018"
+                >
+            </a>
+            <a href="gallery-gd/0013.png">
+                <img 
+                    src="gallery-gd/0013.png", 
+                    data-big="gallery-gd/0013.png"
+                    data-title=""
+                    data-description="Color-Fi Project, 2017"
+                >
+            </a>
+            <a href="gallery-gd/0014.png">
+                <img 
+                    src="gallery-gd/0014.png", 
+                    data-big="gallery-gd/0014.png"
+                    data-title=""
+                    data-description="Shadows & Hues at Etsy"
+                >
+            </a>
+            <a href="gallery-gd/0015.png">
+                <img 
+                    src="gallery-gd/0015.png", 
+                    data-big="gallery-gd/0015.png"
+                    data-title=""
+                    data-description="ShipMeFish 2018 site, an ongoing project."
+                >
+            </a>
+            
+
+        </div>
+    
+    </div>
+
+    <script>
+    $(function() {
+    
+        // Load the classic theme
+        Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+
+        // Initialize Galleria
+        Galleria.run('#galleria');
+    });
+    </script>
+
+
+  <!-- Mobile Version -->
+  
+</div>
+
+<!-- footer -->
+<div id="footer">
+  <div class="line-decor" style="top: 3px;"> </div>
+  <p style="padding: 13px;">  Copyright 2018 japortfolio.net. Some rights reserved. See licensing for more information. </p>
+</div>
+
+</body>
